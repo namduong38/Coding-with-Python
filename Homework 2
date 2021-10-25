@@ -1,0 +1,27 @@
+def thu_nhap(luong, phu_cap):
+    tong_thu_nhap = luong + phu_cap
+    bhxh = tong_thu_nhap * 0.08
+    if tong_thu_nhap < 5:
+        pit = tong_thu_nhap * 0.05
+        return bhxh, pit
+    elif tong_thu_nhap < 10:
+        pit = tong_thu_nhap * 0.1
+        return bhxh, pit
+    elif tong_thu_nhap < 18:
+        pit = tong_thu_nhap * 0.15
+        return bhxh, pit
+    elif tong_thu_nhap < 32:
+        pit = tong_thu_nhap * 0.2
+        return bhxh, pit
+    elif tong_thu_nhap < 52:
+        pit = tong_thu_nhap * 0.25
+        return bhxh, pit
+    elif tong_thu_nhap < 80:
+        pit = tong_thu_nhap * 0.3
+        return bhxh, pit
+    else:
+        tong_thu_nhap > 80
+        pit = tong_thu_nhap * 0.35
+        return bhxh, pit
+       
+print(thu_nhap(90, 10))
