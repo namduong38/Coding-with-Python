@@ -1,0 +1,12 @@
+gia_theo_ngay = [10.1, 9.5, 10.7, 10.8, 10.6, 10.0, 10.2, 9.5]
+
+for i in range(len(gia_theo_ngay)):
+    if i == 0:
+        continue
+    else:
+        if gia_theo_ngay[i] > gia_theo_ngay[i-1] * 1.07:
+            print("Bán")
+        elif gia_theo_ngay[i] < gia_theo_ngay[i-1] * 0.94:
+            print("Mua")
+        else:
+            print("Giữ")
